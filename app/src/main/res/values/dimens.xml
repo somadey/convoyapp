@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="overview_text_size">13dp</dimen>
+    <dimen name="no_result_text_size">20dp</dimen>
+
+    <dimen name="miles_text_size">25dp</dimen>
+    <dimen name="location_text_size">18dp</dimen>
+    <dimen name="time_text_size">15dp</dimen>
+    <dimen name="price_text_size">25dp</dimen>
+
+    <dimen name="sendalert_text_size">25dp</dimen>
+    <dimen name="alertbutton_text_size">25dp</dimen>
+
+
+</resources>

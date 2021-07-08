@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Convoy App</string>
+    <string name="communication_error">Please try again later.</string>
+    <string name="error_data">Please try again later.</string>
+    <string name="alert_panel_text">Do you want to be notified when \n this lane has new loads?</string>
+    <string name="alert_button_text">Yes, Send Alerts</string>
+
+</resources>

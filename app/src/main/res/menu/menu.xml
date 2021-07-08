@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favorite"
+        android:title="Sort By"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/price_menu"
+        android:title="Price"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/miles_menu"
+        android:title="Miles"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/pickup"
+        android:title="Pick Up"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/dropoff"
+        android:title="Drop Off"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/origin_menu"
+        android:title="Origin"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/destination_menu"
+        android:title="Destination"
+        app:showAsAction="never"/>
+
+</menu>

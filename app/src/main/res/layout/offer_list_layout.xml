@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorViewBg"
+    tools:context=".views.OfferBrowser.OfferBrowserActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/my_toolbar"
+        android:id="@+id/offer_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+
+    <TextView
+        android:id="@+id/empty_view_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_empty_offers"
+        android:text="@string/error_data"
+        android:drawablePadding="10dp"
+        android:visibility="gone"
+        android:textSize="@dimen/no_result_text_size"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/colorViewBg"
+        android:gravity="top">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alert_panel_text"
+            android:textColor="@color/colorSendAlertText"
+            android:textSize="@dimen/sendalert_text_size"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/alert_button"
+            android:textAlignment="center"
+            android:cropToPadding="true"
+            android:gravity="top"
+            android:scaleType="fitCenter"
+            android:text="@string/alert_button_text"
+            android:textColor="@color/colorAlertButtonText"
+            android:textSize="@dimen/alertbutton_text_size" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+</RelativeLayout>
+
+
